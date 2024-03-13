@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iframes</title>
     <style>
+        iframe {
+            height: 150px;
+            width: 350px;
+        }
         h1 {
             background-color: black;
             text-align: center;
@@ -15,7 +19,10 @@
 <body>
     <h1>Meu site principal</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum atque necessitatibus, esse doloribus omnis, odit repellendus reprehenderit voluptatibus officiis nisi quia distinctio velit, est ullam autem fugit? Tenetur, nesciunt maiores?</p>
-    <iframe src="paginas-extras/pag004.html" frameborder="0">Seu navegador não é compatível com isso...</iframe>
+    <iframe src="paginas-extras/pag004.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer"> <!--sandbox = coisas da mesma origem/uso de formulários/permitindo scripts//referrerpolicy = não coleta informações do usuário-->
+        Seu navegador não é compatível com isso...
+
+    </iframe>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa unde magni illo at exercitationem, eligendi incidunt amet quidem dignissimos. Repellat suscipit, officia recusandae similique illum temporibus consectetur dolores eaque! Quasi?</p>
 </body>
 </html>
